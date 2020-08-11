@@ -1,0 +1,315 @@
+<section id="hero">
+  <div class="hero-container">
+    <h1>Edouard PHAN</h1>
+    <h2>Concepteur Développeur d'Applications</h2>
+    <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+  </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+  <!-- ======= About Me Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      
+      <div class="section-title">
+        <span>A propos</span>
+        <h2>A propos</h2>
+        <p>Passionné par l'informatique et la permaculture, ancien professeur de chimie industrielle puis directeur dans la restauration, je termine tout juste ma reconversion en tant que Concepteur Developpeur d'Applications.</p>
+        <p>Je suis à la recherche d'une alternance pour l'année 2020 afin d'évoluer vers le titre de Concepteur Architecte Informatique</p>
+  
+      </div>
+  
+      <div class="row">
+        <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+        <div class="col-lg-8 d-flex flex-column align-items-stretch">
+            <div class="content pl-lg-4 d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="icofont-rounded-right"></i> <strong>Nom :</strong> Edouard PHAN</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>Site web :</strong><a href="http://cda11.2isa.org/cv-site.php"> http://cda11.2isa.org/cv-site.php</a></li>
+                    <li><i class="icofont-rounded-right"></i> <strong>Tel. :</strong> +33610291979</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>Ville :</strong> MILLAU , FRANCE</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="icofont-rounded-right"></i> <strong>Age :</strong> 37</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>Niveau :</strong> Licence</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>Email :</strong> edouard.phan@gmail.com</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>RQTH</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- ======= progressbar ======= -->
+            <div class="skills-content pl-lg-4">
+              <app-progressbar
+              *ngFor="let progressbar of progressbars"
+                         [progressbarSkill]="progressbar.skill"
+                         [progressbarValue]="progressbar.value"></app-progressbar>       
+            </div>
+            <!-- ======= End Progressbar ======= -->
+        </div>
+      </div>
+    </div>
+  </section><!-- End About Me Section -->
+
+  <!-- ======= My Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Curiculum vitae</span>
+        <h2>Curiculum vitae</h2>
+        <p>Concepteur Développeur d'Applications</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Introduction</h3>
+          <div class="resume-item pb-0">
+            <h4>Edouard PHAN</h4>
+            <p><em>Passionné par l'informatique et la permaculture, ancien professeur de chimie industrielle puis directeur dans la restauration, je viens de terminer ma reconversion en tant que de Concepteur Développeur d'Applications</em></p>
+            <p><em>Je suis à la recherche d'une alternance pour la rentré 2020 afin d'evoluer vers le titre de Concepteur Architecte Informatique (CAI)</em></p>
+            <ul>
+              <li>18 rue Mathis, PARIS, FRANCE</li>
+              <li>(+33) 6-10-29-19-79</li>
+              <li>edouard.phan@gmail.com</li>
+            </ul>
+          </div>
+          <h3 class="resume-title">Formation</h3>
+          <app-resumeitem
+          *ngFor="let resumeitem of resumeitems"
+                       [resumeitemTitle]="resumeitem.title"
+                       [resumeitemH5]="resumeitem.h5"
+                       [resumeitemLocation]="resumeitem.location"
+                       [resumeitemResume]="resumeitem.resume">
+          </app-resumeitem>
+          <div class="icon-box text-center align-items-center mt-5">
+            <div class="icon"><a targer="_blank" href="../assets/doc/CV_Edouard_PHAN.pdf"><i class="bx bx-file"></i></a></div>
+            <h4 class="title"><a targer="_blank" href="../assets/doc/CV_Edouard_PHAN.pdf">CV</a></h4>
+            <p class="description fontsize13">Télécharger</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <h3 class="resume-title">Expérience Professionnelle</h3>
+          <div class="resume-item fontsize13">
+            <h4>STAGIAIRE DEVELOPPEUR</h4>
+            <h5>2019</h5>
+            <p><em>EPSILON du groupe ALCEN, TOULOUSE </em></p>
+              <p>L’objectif des travaux de développement était de simplifier l’application tant du point de vue technique que fonctionnel. Pour l’utilisateur, toutes les actions (édition, calcul, lecture des résultats) devaient pouvoir se faire depuis l’interface Web.</p>
+              <p>
+                Côté technique, le nombre de couches applicatives a été réduit de cinq à trois dans lesquelles une API remplace les rôles du serveur mail, du “nodeConnector” et du mailer PERL.
+              </p>
+              <p>
+                L’API est écrite avec le moteur Node.JS et la librairie Express.JS pour la gestion des routes. L’API se charge de l’import et de l’export des données (conversion XLSX to JSON) et du lancement du solveur
+                Une première version d’affichage des données à été ajoutée à l’interface.
+              </p>
+          </div>
+          <div class="resume-item">
+            <h4>RESTAURATION</h4>
+            <h5>2012 - 2017</h5>
+            <p><em>Directeur au Bo zinc café, PARIS 16</em></p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="ulcv">
+                  <li>Recrutement des employés</li>
+                  <li>Formation du personnel</li>
+                  <li>Organisation du planning employé</li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="ulcv">
+                  <li>Management, motivation et animation de l’équipe</li>
+                  <li>Gestion trésorerie</li>
+                  <li>Coordination du travail</li>
+                </ul>
+              </div>
+            </div>
+            <p><em>Responsable au Bo zinc café et Chez Prosper, PARIS</em></p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="ulcv">
+                  <li>Contrôle de l'application de procédures Qualité, Hygiène, Sécurité et Environnement (QHSE)</li>
+                  <li>Gestion administrative</li>
+                  <li>Organisation du planning employé</li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="ulcv">
+                  <li>Vérification des éléments d'activité</li>
+                  <li>Supervision du recrutement du personnel</li>
+                </ul>
+              </div>
+            </div>
+            <p><em>Serveur Chez Prosper, PARIS</em></p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="ulcv">
+                    <li>Accueil</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="ulcv">
+                    <li>Prise de commande et service</li>
+                  </ul>
+                </div>
+              </div>            
+          </div>
+          <div class="resume-item">
+            <h4>ENSEIGNEMENT</h4>
+            <h5>2004 - 2012</h5>
+            <p><em>Technicien de Laboratoire (enseignement en Travaux Pratique) Lycée Diderot, Lycée Galilée</em></p>
+            <p><em>Adjoint technique de laboratoire, Aide technique de laboratoire</em></p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="ulcv">
+                  <li>BPL Bonnes pratiques de Laboratoire</li>
+                  <li>Qualité, Hygiène, Sécurité et Environnement (QHSE)</li>
+                  <li>Mesures physiques</li>
+                  <li>Méthode d’analyse chimique</li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="ulcv">
+                  <li>Normes qualité</li>
+                  <li>Régulation et instrumentation</li>
+                  <li>Normes environnementales</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+          
+          
+        
+      </div>
+
+    </div>
+  </section><!-- End My Resume Section -->
+
+  <!-- ======= My Services Section ======= -->
+  <section id="Réalisations&Hobbies" class="services">
+    <div class="container servicecontainer">
+
+      <div class="section-title">
+        <span>Mes réalisations et hobbies</span>
+        <h2>Mes réalisations et hobbies</h2>
+        <p>“ La réalisation réside dans la pratique. ” Bouddha</p>
+      </div>
+
+      <div class="row">
+        
+
+        <div class="col-md-8 col-lg-8 d-flex align-items-stretch mb-5 mb-lg-0 align-items-center p-2">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4 class="title"><a target = "_blank" href="http://nos.epsilon-alcen.com/app/(list:nodes//de2ail:nodes)"><img src="assets/img/epsilon.jpg" width="50%"></a></h4>
+            <h4 class="title"><a ><img src="assets/img/projet.jpg" width="50%"></a></h4>
+            
+            <p class="description"></p>
+          </div>
+        </div>
+        
+        <div class="col-md-4 col-lg-4 align-items-stretch mb-5 mb-lg-0 p-2">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4 class="title"><a targer="_blank" href="../assets/doc/Dossierprojet.NOS.E.PHAN.pdf">Dossier projet NOS</a></h4>
+            
+            <p class="description">Télécharger</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0 p-2">
+          <div class="icon-box">
+            <h4 class="title"><a ><img src="assets/img/jardin.jpg" width="100%"></a></h4>
+            <h4 class="title">Permaculture</h4>
+            <p class="description">Depuis 2016, je me penche sur la qualité nutritionnelle et aromatique des aliments, étant influencé par la restauration et mes origines. J'essaie de créer un équilibre identique à celui des forêts dans mon potager. Malgré les idées préconçues, la permaculture n'est pas une pratique en vogue similaire au bio mais une méthode datant de millénaires.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0 p-2">
+          <div class="icon-box">
+            <h4 class="title"><a ><img src="assets/img/go.jpg" width="100%"></a></h4>
+            <h4 class="title">GO</h4>
+            <p class="description">J'apprécie le jeu de GO pour son côté binaire que l'on peut transposer à l'informatique : on peut comparer les portes ouvertes ou fermées (booléen) aux sorties d'une pierre du jeu. Détrompez-vous, les règles sont simples mais le jeu de GO n'en reste pas moins un des jeux les plus complexes par ses possibilités infinies. Il est possible de jouer 361 combinaisons, soit 1,4 x 10^768 coups. Autant dire qu'il est impossible de reproduire deux fois la même partie dans sa vie. La première intelligence artificielle AlphaGo développée par DeepMind (Google), qui a gagné contre un des meilleurs joueurs de GO au monde, Lee Sedol, ne remonte qu'à 2016.</p>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </section><!-- End My Services Section -->
+
+  <!-- ======= Testimonials Section ======= -->
+  
+      <section id="contact" class="contact testimonials colorwhite">
+        <div class="container">
+          <div class="section-title">
+            <span>Contactez Moi</span>
+            <h2>Contactez Moi</h2>
+            <p></p>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="info-box mt-4">
+                    <a target="_blank" href="https://www.linkedin.com/in/edouard-phan-5656a6169" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/edouard-phan-5656a6169" class="linkedin"><h3 class="colorwhite">Social Profiles</h3></a>
+                  
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="info-box mt-4">
+                    <a href="mailto:e.phan2isa@gmail.com" class="colorwhite"><i class="bx bx-envelope"></i></a>
+                    <a href="mailto:e.phan2isa@gmail.com" class="colorwhite"><h3>e.phan2isa@gmail.com</h3></a>
+                   
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="info-box mt-4">
+                    <i class="bx bx-phone-call"></i>
+                    <h3>+33 6 10 29 19 79</h3>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+    
+            
+          </div>
+    
+        </div>
+      </section><!-- End Contact Me Section -->
+ 
+  
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="container">
+    <h3>Edouard PHAN</h3>
+    <p></p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/edouard-phan-5656a6169" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+    <div class="copyright">
+      &copy; Copyright <strong><span>Laura</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <p>Modifié par: Edouard PHAN</p>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
